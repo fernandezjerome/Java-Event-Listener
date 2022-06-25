@@ -9,12 +9,42 @@
 
 <body>
 
-<header>
 
+<header>
+<style>
+
+    body, div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .grandparent {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+    }
+    .parent {
+        width: 130px;
+        height: 130px;
+        background-color: blue;
+    }
+    .child {
+        width: 60px;
+        height: 60px;
+        background-color: green;
+    }
+
+
+</style>
 </header>
 
-<main>
+<main class="test">
 
+    <div class="grandparent">
+        <div class="parent">
+            <div class="child"> </div>
+        </div>
+    </div>
 </main>
 
 <footer>
